@@ -14,7 +14,7 @@
 
 	<typeAliases>
 		<typeAlias alias="User" type="com.wjx.user.pojo.User" />
-		<typeAlias alias="Blog" type="com.wjx.blog.pojo.Blog" />
+		<typeAlias alias="Article" type="com.wjx.blog.article.pojo.Article" />
 	</typeAliases>
 	
 </configuration>

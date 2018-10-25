@@ -1,6 +1,8 @@
-package com.wjx.blog.pojo;
+package com.wjx.blog.article.pojo;
 
-public class Blog {
+import java.io.Serializable;
+
+public class Article implements Serializable{
 	private int id;
 	private String title;
 	private String tag;

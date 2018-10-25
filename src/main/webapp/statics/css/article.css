@@ -1,0 +1,21 @@
+@CHARSET "UTF-8";
+
+.articleBody {
+	display: block;
+	font-family: PingFangSC-Regular;
+	font-size: 14px;
+	color: #482929;
+	letter-spacing: 0;
+	line-height: 20px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: normal;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 1; /*规定最多显示两行*/
+}
+
+.articleTitle {
+	font-size: 18px;
+	font-weight: bold;
+}

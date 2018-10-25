@@ -10,8 +10,8 @@
   <title>layout 后台大布局 - Layui</title>
   <link rel="stylesheet" href="layui/css/layui.css" media="all">
 <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<link rel="stylesheet" href="statics/css/article.css">
 </head>
-
 
 <body class="layui-layout-body">
 <div class="layui-layout layui-layout-admin">
@@ -71,6 +71,6 @@
         <li class="layui-nav-item"><a href="">发布商品</a></li>
       </ul>
     </div>
-    
-  </div>
+   </div>
+   
   
