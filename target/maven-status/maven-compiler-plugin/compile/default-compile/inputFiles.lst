@@ -1,0 +1,9 @@
+/home/wjx/workspace/MavenProject/src/main/java/com/wjx/services/impl/UserServicesImpl.java
+/home/wjx/workspace/MavenProject/src/main/java/com/util/PageUtil.java
+/home/wjx/workspace/MavenProject/src/main/java/com/redis/RedisCacheTransfer.java
+/home/wjx/workspace/MavenProject/src/main/java/com/redis/RedisCache.java
+/home/wjx/workspace/MavenProject/src/main/java/com/wjx/controller/UserController.java
+/home/wjx/workspace/MavenProject/src/main/java/com/wjx/pojo/User.java
+/home/wjx/workspace/MavenProject/src/main/java/com/wjx/controller/IndexController.java
+/home/wjx/workspace/MavenProject/src/main/java/com/wjx/mapper/UserMapper.java
+/home/wjx/workspace/MavenProject/src/main/java/com/wjx/services/UserServices.java

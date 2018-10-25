@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wjx.mapper.UserMapper">
+
+	<!-- 开启redis缓存 -->
+	<cache eviction="LRU" type="com.redis.RedisCache" />
+
+	<select id="queryUserList" parameterType="User" resultType="User">
+		select * from users
+	</select>
+
+	<select id="queryUserById" parameterType="User" resultType="User">
+		select * from users where id = #{id}
+	</select>
+
+	<insert id="addUser" parameterType="User">
+		insert into users
+		<trim prefix="(" suffix=")" suffixOverrides=",">
+			<if test = "name != null and name != ''">
+				name,
+			</if>
+			<if test="address != null and address != ''">
+				address,
+			</if>
+			<if test = "age != null and age != ''">
+				age,
+			</if>
+		</trim>
+		<trim prefix="values (" suffix=")" suffixOverrides=",">
+			<if test="name != null and name != ''">
+				#{name},
+			</if>
+			<if test="address != null and address != ''">
+				#{address},
+			</if>
+				<if test="age != null and age != ''">
+				#{age},
+			</if>
+		</trim>
+
+	</insert>
+
+	<update id="updateUser" parameterType="User">
+
+		<if test="id != null">
+			update users
+			<set>
+				<if test="name != null">
+					name = #{name},
+				</if>
+				<if test="age != null">
+					age=#{age},
+				</if>
+				<if test="address != null">
+					address=#{address},
+				</if>
+			</set>
+			where id = #{id}
+		</if>
+	</update>
+
+	<delete id="deleteUser" parameterType="User">
+		delete from users where id
+		= #{id}
+	</delete>
+</mapper>
