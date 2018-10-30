@@ -26,9 +26,12 @@ public class ArticleController {
 		
 		List<Article> list = articleServices.queryArticleList();
 		request.setAttribute("list", list);
-		for (Article article : list) {
-			System.out.println("*******:"+article.getTitle());
-		}
 		return "blog/articleList";
+	}
+	
+	@RequestMapping(value="/queryArticleDetail",method = RequestMethod.GET)
+	public String queryArticleDetail(HttpServletRequest request){
+		
+		return "blog/articleDetail";
 	}
 }

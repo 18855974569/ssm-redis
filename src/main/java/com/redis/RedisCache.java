@@ -132,7 +132,6 @@ public class RedisCache implements Cache {
     }
 
     public static void setJedisConnectionFactory(JedisConnectionFactory jedisConnectionFactory) {
-    	System.out.println("数据源:-----------------------------------------------------------"+jedisConnectionFactory);
         RedisCache.jedisConnectionFactory = jedisConnectionFactory;
     }
 }

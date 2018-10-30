@@ -66,5 +66,11 @@
 
 	<!-- 导入redis配置 -->
 	<import resource="spring-redis.xml" />
-	
+
+
+	<!-- 配置aop切面 -->
+	<bean class="com.wjx.aspect.HelloWorldAop"></bean>
+	<!-- 开启切面注解 -->
+	<aop:aspectj-autoproxy />
+
 </beans>
